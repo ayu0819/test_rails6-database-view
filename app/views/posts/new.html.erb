@@ -1,0 +1,22 @@
+<div>
+<h1>入力フォーム</h1>
+<p>記入してください</p>
+</div>
+
+<%= form_tag("/posts/create") do %>
+　<div class="form">
+  　<label>title: </label>
+  　<input name="title" type="text">
+  　<br>
+  　<label>text: </label>
+  　<textarea name="content"></textarea>
+  　<input type="submit" value="投稿">
+　</div>
+<% end %>
+
+<%= link_to("ユーザーページへ戻る", "/users/index") %>
+<%= link_to("topへ戻る", "/") %>
+
+
+
+

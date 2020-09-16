@@ -1,0 +1,11 @@
+<h1>Topページだよ。ここに投稿が表示されるよ</h1>
+
+ <% @posts.each do |post| %>
+      <div>
+      <%= post.title %>
+    <%= post.content %>
+      </div>
+ <% end %>
+
+<%= link_to("ユーザー画面へ", "/users/index") %>
+<%= link_to("編集画面へ", "/posts/new") %>
